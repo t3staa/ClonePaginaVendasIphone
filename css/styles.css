@@ -188,3 +188,49 @@ header nav {
 .selected {
   outline: 2px solid #43a1ff;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* Escondendo os li da navbar */
+  #navbar li {
+    display: none;
+  }
+
+  /* Mostrando apenas a logo na navbar */
+  #navbar #logo {
+    display: flex;
+  }
+
+  /* Escondendo os links do header */
+  #bottom-header-links a {
+    display: none;
+  }
+
+  /* Mostrando apenas o botão de comprar */
+  #bottom-header-links .btn {
+    display: flex;
+  }
+
+  /* Tudo que passar do tamanho da tela fica oculto */
+  #main-content {
+    padding: 2rem;
+    overflow: hidden;
+  }
+
+  #main-content #subtitle {
+    font-size: 3rem;
+  }
+
+}
+
+/* Tablet */
+@media (min-width: 768px)  and (max-width: 1024px) {
+
+  #main-content {
+    overflow: hidden;
+    padding: 2rem;
+  }
+
+}
+
